@@ -1,5 +1,5 @@
-appId: 'ShysixMC'
-productName: 'ShysixMC'
+appId: 'SphysixMC'
+productName: 'SphysixMC'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2022-2022 PrismaDEV'
