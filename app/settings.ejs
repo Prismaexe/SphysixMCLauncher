@@ -2,21 +2,21 @@
     <div id="settingsContainerLeft">
         <div id="settingsNavContainer">
             <div id="settingsNavHeader">
-                <span id="settingsNavHeaderText">Settings</span>
+                <span id="settingsNavHeaderText">Paramètre</span>
             </div>
             <div id="settingsNavItemsContainer">
                 <div id="settingsNavItemsContent">
-                    <button class="settingsNavItem" rSc="settingsTabAccount" id="settingsNavAccount" selected>Account</button>
-                    <button class="settingsNavItem" rSc="settingsTabMinecraft">Minecraft</button>
-                    <button class="settingsNavItem" rSc="settingsTabMods">Mods</button>
+                    <button class="settingsNavItem" rSc="settingsTabAccount" id="settingsNavAccount" selected>Compte</button>
+                    <button class="settingsNavItem" rSc="settingsTabMinecraft">Jeu</button>
+                    <button class="settingsNavItem" rSc="settingsTabMods">Addons</button>
                     <button class="settingsNavItem" rSc="settingsTabJava">Java</button>
                     <button class="settingsNavItem" rSc="settingsTabLauncher">Launcher</button>
                     <div class="settingsNavSpacer"></div>
                     <button class="settingsNavItem" rSc="settingsTabAbout">About</button>
-                    <button class="settingsNavItem" rSc="settingsTabUpdate" id="settingsNavUpdate">Updates</button>
+                    <button class="settingsNavItem" rSc="settingsTabUpdate" id="settingsNavUpdate">MAJ</button>
                     <div id="settingsNavContentBottom">
                         <div class="settingsNavDivider"></div>
-                        <button id="settingsNavDone">Done</button>
+                        <button id="settingsNavDone">Appliquer!</button>
                     </div>
                 </div>
             </div>
@@ -25,8 +25,8 @@
     <div id="settingsContainerRight">
         <div id="settingsTabAccount" class="settingsTab">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Account Settings</span>
-                <span class="settingsTabHeaderDesc">Add new accounts or manage existing ones.</span>
+                <span class="settingsTabHeaderText">Paramètre du compte</span>
+                <span class="settingsTabHeaderDesc">Voie ton/tes compte(s)</span>
             </div>
             <div class="settingsAuthAccountTypeContainer">
                 <div class="settingsAuthAccountTypeHeader">
@@ -40,7 +40,7 @@
                         <span>Microsoft</span>
                     </div>
                     <div class="settingsAuthAccountTypeHeaderRight">
-                        <button class="settingsAddAuthAccount" id="settingsAddMicrosoftAccount">+ Add Microsoft Account</button>
+                        <button class="settingsAddAuthAccount" id="settingsAddMicrosoftAccount">+ Ajoute un nouveau compte Microsoft</button>
                     </div>
                 </div>
                 
@@ -60,7 +60,7 @@
                         <span>Mojang</span>
                     </div>
                     <div class="settingsAuthAccountTypeHeaderRight">
-                        <button class="settingsAddAuthAccount" id="settingsAddMojangAccount">+ Add Mojang Account</button>
+                        <button class="settingsAddAuthAccount" id="settingsAddMojangAccount">+ Ajoute un nouveau compte Mojang</button>
                     </div>
                 </div>
                 
@@ -71,11 +71,11 @@
         </div>
         <div id="settingsTabMinecraft" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Minecraft Settings</span>
-                <span class="settingsTabHeaderDesc">Options related to game launch.</span>
+                <span class="settingsTabHeaderText">Option du jeu</span>
+                <span class="settingsTabHeaderDesc">SphysixMC</span>
             </div>
             <div id="settingsGameResolutionContainer">
-                <span class="settingsFieldTitle">Game Resolution</span>
+                <span class="settingsFieldTitle">Résolution du jeu</span>
                 <div id="settingsGameResolutionContent">
                     <input type="number" id="settingsGameWidth" min="0" cValue="GameWidth">
                     <div id="settingsGameResolutionCross">&#10006;</div>
@@ -84,7 +84,7 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">Launch in fullscreen.</span>
+                    <span class="settingsFieldTitle">Lancer en plein écran.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -93,21 +93,12 @@
                     </label>
                 </div>
             </div>
-            <div class="settingsFieldContainer">
-                <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">Automatically connect to the server on launch.</span>
-                </div>
-                <div class="settingsFieldRight">
-                    <label class="toggleSwitch">
-                        <input type="checkbox" cValue="AutoConnect">
-                        <span class="toggleSwitchSlider"></span>
-                    </label>
-                </div>
+            <div class="none">
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">Launch game process detached from launcher.</span>
-                    <span class="settingsFieldDesc">If the game is not detached, closing the launcher will also close the game.</span>
+                    <span class="settingsFieldTitle">Lancer le processus de jeu détaché du lanceur.</span>
+                    <span class="settingsFieldDesc">Si le jeu n'est pas détaché, la fermeture du lanceur fermera également le jeu.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -119,7 +110,7 @@
         </div>
         <div id="settingsTabMods" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Mod Settings</span>
+                <span class="settingsTabHeaderText">Paramètre des addons</span>
                 <span class="settingsTabHeaderDesc">Enable or disable mods.</span>
             </div>
             <div id="settingsSelServContainer">
@@ -154,7 +145,7 @@
                 </div>
                 <div id="settingsShadersContainer">
                     <div class="settingsModsHeader">Shaderpacks</div>
-                    <div id="settingsShaderpackDesc">Enable or disable shaders. Please note, shaders will only run smoothly on powerful setups. You may add custom packs here.</div>
+                    <div id="settingsShaderpackDesc">Activez ou désactivez les shaders. Veuillez noter que les shaders ne fonctionneront correctement que sur des configurations puissantes. Vous pouvez ajouter des packs personnalisés ici. Une fois ajouter redémarrer le launcher</div>
                     <div id="settingsShaderpackWrapper">
                         <button id="settingsShaderpackButton"> + </button>
                         <div class="settingsSelectContainer">
