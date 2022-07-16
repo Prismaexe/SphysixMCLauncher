@@ -1,8 +1,8 @@
-appId: 'SphysixMC'
-productName: 'SphysixMC'
+appId: 'UpsideWorld'
+productName: 'UpsideWorld'
 artifactName: '${productName}-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2022-2022 PrismaDEV'
+copyright: 'Copyright © 2022-2022 PrismaEXE'
 
 asar: true
 compression: 'maximum'
